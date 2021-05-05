@@ -1,0 +1,36 @@
+ * and open the template in the editor.
+ */
+package pila;
+
+import java.util.LinkedList;
+
+/**
+ *
+ * @author AlumnoManana
+ */
+public class Pila {
+
+    /**
+     * @param args the command line arguments
+     */
+    
+    private final LinkedList pila;
+    
+    Pila(){ this.pila = new LinkedList();}
+    public void apilar(Object elemento) {pila.push(elemento);}
+    public Object desapilar(){return pila.pop();}
+    public Object cima() {return pila.peek();}
+    
+    
+    public static void main(String[] args) {
+        Pila p = new Pila();
+        for (int i=1;i<=3;i++)
+           p.apilar(i);
+        System.out.println("elemento TOS; "+p.cima());
+        p.apilar(4);
+        System.out.println("elemento TOS; "+p.cima());
+        p.desapilar();
+        System.out.println("elemento TOS; "+p.cima());
+    }
+    
+}
