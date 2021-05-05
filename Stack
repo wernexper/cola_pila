@@ -1,0 +1,36 @@
+* To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package stack;
+
+import java.util.Stack;
+/**
+ *
+ * @author AlumnoManana
+ */
+public class etack {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+       Stack<String> st= new Stack();
+       st.push("Prueba");st.push("de");st.push("método ");st.push("search");
+       st.push("en");st.push("una");st.push("cola");st.push("Stack");
+       /*
+       System.out.println(st);
+       System.out.println(st.pop());
+       System.out.println(st.peek());
+       System.out.println(st);
+       System.out.println(st.pop());
+       System.out.println(st);
+       System.out.println(st.pop());
+       */
+       st.add("Antonio");
+       st.pop();
+       
+       System.out.println(st);
+       
+    }
+    
